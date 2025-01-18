@@ -15,7 +15,6 @@ object API_Builder {
 
     fun provideAPI() =
         Retrofit.Builder()
-            .client(client)
             .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
